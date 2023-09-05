@@ -41,7 +41,7 @@ class StartQuizWidget extends StatelessWidget {
           onPressed: switchScreen,
           style: OutlinedButton.styleFrom(foregroundColor: Colors.white),
           icon: const Icon(Icons.arrow_right_alt),
-          label: const Text('Start Quix'),
+          label: const Text('Start Quiz'),
         ),
       ],
     )));
