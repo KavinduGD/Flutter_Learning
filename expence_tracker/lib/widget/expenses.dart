@@ -1,4 +1,4 @@
-import 'package:expence_tracker/expences_list.dart';
+import 'package:expence_tracker/widget/expenses_list/expences_list.dart';
 import 'package:expence_tracker/models/expense.dart';
 import 'package:flutter/material.dart';
 
@@ -15,13 +15,13 @@ class _ExpensesState extends State<Expenses> {
   final List<Expense> _registerdExpenses = [
     Expense(
       title: "Flutter Course",
-      amount: 19.99,
+      amount: 11.9995,
       date: DateTime.now(),
       category: Category.food,
     ),
     Expense(
       title: "Cinama",
-      amount: 12.34,
+      amount: 19.3434,
       date: DateTime.now(),
       category: Category.leisure,
     ),
