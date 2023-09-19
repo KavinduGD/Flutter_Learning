@@ -10,18 +10,17 @@ class ExpenseItem extends StatelessWidget {
       margin: const EdgeInsets.only(left: 20, bottom: 10, right: 20),
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text('\$${expense.amount.toStringAsFixed(2)}'),
-            Column(
+            Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(expense.title),
-                const SizedBox(
-                  height: 4,
-                ),
+                Spacer(),
                 Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     const Icon(Icons.alarm),
                     const SizedBox(
