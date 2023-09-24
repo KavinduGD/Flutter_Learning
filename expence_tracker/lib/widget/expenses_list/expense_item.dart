@@ -11,22 +11,28 @@ class ExpenseItem extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('\$${expense.amount.toStringAsFixed(2)}'),
+            Text(
+              expense.title,
+            ),
+            const SizedBox(
+              height: 4,
+            ),
             Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(expense.title),
-                Spacer(),
+                Text(
+                  '\$${expense.amount.toStringAsFixed(2)}',
+                ),
+                const Spacer(),
                 Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    const Icon(Icons.alarm),
+                    Icon(categoryIcons[expense.category]),
                     const SizedBox(
                       width: 8,
                     ),
-                    Text(expense.date.toString()),
+                    Text(
+                      expense.formattedDate,
+                    ),
                   ],
                 ),
               ],
